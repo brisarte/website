@@ -1,0 +1,3 @@
+[submodule "danielle"]
+	path = danielle
+	url = https://github.com/daniellerheder/portfolio.git
