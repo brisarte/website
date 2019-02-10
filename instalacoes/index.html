@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Brisarte</title>
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
+        <link href="../css/lightbox.min.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <style>
+p {
+    padding: 1em;
+    text-shadow: black 0 0 5px,
+                 black 0 0 10px,
+                 black 0 0 15px;
+}
+.projeto {
+    width: 65%;
+    margin: 10%;
+    background-color:rgba(0,0,0,0.4);
+    color: white;
+    padding: 1em;
+    display: inline-block;
+}
+.projeto img {
+    max-width: 100%;
+}
+.flex-content {
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.sm-start {
+    order: 1;
+}
+.sm-end {
+    order: 0;
+}
+.flex {
+    text-align: left;
+    flex: 3;
+    position: relative;
+    display: inline-flex;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+.flex-1 {
+    flex:2;
+}
+.flex-2 {
+    flex: 4;
+}
+.text {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.text-super-padding {
+    padding: 2em 3em 1em;
+}
+@media (min-width: 1000px) {
+    .flex-content {
+        flex-direction: row;
+    }
+    .sm-start {
+        order: 0;
+    }
+    .sm-end {
+        order: 1;
+    }
+    .text {
+        padding: 0  0 1em 1em;
+    }
+}
+div.flex-column {
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.width100 {
+    width: 100%;
+}
+.video-container {
+    width:100%;
+	position: relative;
+	padding-bottom: 36.25%;
+	padding-top: 30px; 
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+</style>
+    </head>
+<body>
+    <div id="container">
+    </div>
+
+    <div id="projetos">
+    <div class="logo">
+        <a href="/">
+        BRIS<br>
+        ARTE
+        </a>
+    </div>
+        <h1>instalações interativas</h1>
+
+        <article class="projeto" id="moksha">
+            <h3>Moksha <br> <small>
+                Uma experiência Solo
+            </small></h3>
+            <div class="flex flex-content">
+                <div class="flex sm-6">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/be8YcsdnK0o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="flex flex-2 p50 sm-6">
+                    <span class="text">
+                        Moksha é uma videoinstalação interativa que tem como proposta a imersão
+do indivíduo em seu próprio ser, de modo que o visitante é o personagem principal
+da narrativa e também sujeito ativo desta experiência. Assim, a partir de símbolos
+retirados das teorias de Jung, Nietzsche e Campbell, o participante é desafiado a
+quebrar o ciclo vida-morte-vida, travando uma batalha contra o ego a fim de atingir a
+superação da existência.</span>
+                </div>
+            </div>
+            <div class="flex">
+                <a href="../img/raizes.jpg" data-lightbox="moksha" data-title="Batalha contra o ego">
+                    <img src="../img/raizes.jpg"/>
+                </a>
+                <a href="../img/batalha.jpg" data-lightbox="moksha" data-title="Batalha contra o ego">
+                    <img src="../img/batalha.jpg"/>
+                </a>
+                <a href="../img/queda.png" data-lightbox="moksha" data-title="Batalha contra o ego">
+                <img src="../img/queda.png"/>
+                </a>
+                <a href="../img/corpo.jpg" data-lightbox="moksha" data-title="Batalha contra o ego">
+                <img src="../img/corpo.jpg"/>
+                </a>
+
+            </div>
+        </article>
+        <article class="projeto right" id="presenca">
+            <h3>Presença <br><small>Sesc 70 anos</small></h3>
+            <div class="flex-content flex-column">
+                <div class="flex">
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/240528730" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="flex sm-start">
+                    <span class="text-super-padding">
+Nada dura para sempre, tudo o que existe está em contínuo processo de mutação e marcha rumo a seu próprio fim. Nada permanece o mesmo o tempo todo, de modo que através dessa transformação, a renovação da realidade se torna possível. 
+ <br>Neste contexto de impermanências e transitoriedades, este trabalho busca trazer à tona o privilégio da presença com relação à ausência, colocando o visitante frente a um processo de construção e desconstrução de colunas. 
+ <br>Possibilitando uma nova configuração a partir de novas presenças e novos movimentos, dando continuidade à mutabilidade do momento.
+                    </span>
+                </div>
+            </div>
+        </article>
+        <p style="opacity:0.4;width:80%;display:inline-block;font-size:0.8em; color:black;padding:0;">
+            As  interfaces que  permitem  gestos livres partem  do  princípio  que  o  corpo humano  é  o dispositivo  de entrada  da  interação.  
+            Para isso,  o movimento e  a configuração dos  gestos são lidos  por sensores digitais.  
+            Tal interação constrói uma ponte intuitiva entre interfaces digitais e usuários, promovendo um nível de imersão maior que as interfaces tradicionais ao habilitar o indivíduo a interagir naturalmente sem o  contato de dispositivos  mecânicos. 
+        </p>
+    </div>
+
+</body>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/three.js"></script>
+    <script src="../js/stats.min.js"></script>
+    <script src="../js/linhas3d.js"></script>
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+</html>
+

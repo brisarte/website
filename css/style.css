@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700');
+
+
+body {
+    background: #000;
+    margin: 0px;
+    padding:0px;
+    overflow-y: scroll;
+    font-size: 20px;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    z-index:1;
+}
+#projetos {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+}
+
+.logo {
+   font-family: 'IBM Plex Mono', monospace;
+   font-size: 1.5rem;
+   font-weight: 700;
+   z-index:5;
+   position: absolute;
+   top: 2rem;
+   left: 2rem;
+   line-height: 1em;
+
+}
+
+.logo a {
+    transition: text-shadow;
+}
+
+.logo a{
+  animation: logo-focus infinite 20s cubic-bezier(0.175, 0.885, 0.32, 1.075),
+               hue-rotate infinite 13s linear;
+  height: 40vmin;
+}
+@keyframes hue-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    20% {
+        filter: hue-rotate(3deg);
+    }
+    22% {
+        filter: hue-rotate(30deg);
+    }
+    40% {
+        filter: hue-rotate(33deg);
+    }
+    42% {
+        filter: hue-rotate(60deg);
+    }
+    59% {
+        filter: hue-rotate(65deg);
+    }
+    62% {
+        filter: hue-rotate(166deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes logo-focus {
+  0% {
+    text-shadow:  0px -0px 0px rgb(0, 255, 0),
+                  0px  0px 0px  red;
+  }
+  70% {
+    text-shadow:  0px -0px 1px rgb(0, 255, 0),
+                  0px  0px 1px  red;
+  }
+  73% {
+    text-shadow:  0px -0px 2px rgb(0, 255, 0),
+                  0px  0px 2px  red;
+  }
+  78% {
+    text-shadow: -5px -5px 5px rgb(0, 255, 0),
+                  5px  5px 5px  magenta;
+  }
+  82% {
+    text-shadow: -2px -5px 5px rgb(0, 255, 0),
+                  2px  5px 5px  magenta;
+  }
+  95% {
+    text-shadow:  -7px  7px 2px rgb(0, 255, 0),
+                   7px  -7px 2px  magenta;
+  }
+  99% {
+    text-shadow: -2px -3px 0px green,
+                  2px  3px 0px  magenta;
+  }
+  100% {
+    text-shadow: -0px -0px 0px cyan,
+                  0px  0px 0px  red;
+  }
+}
+
+
+h1 {
+   font-family: 'IBM Plex Mono', monospace;
+   margin: 2.3rem 0 1em 6.6rem;
+    font-size: 1.9rem;
+    border-left: 3px solid white;
+    padding-left: 0.9rem;
+    padding-bottom: 0.15rem;
+}
+
+p {
+    padding: 1em;
+    text-shadow: black 0 0 5px,
+                 black 0 0 10px,
+                 black 0 0 15px;
+}
+.projeto {
+    width: 65%;
+    margin: 10%;
+    background-color:rgba(0,0,0,0.6);
+    
+    color: white;
+    padding: 1em;
+    display: inline-block;
+}
+.flex-2 {
+    flex: 2;
+}
+.flex-3 {
+    flex: 3;
+}
